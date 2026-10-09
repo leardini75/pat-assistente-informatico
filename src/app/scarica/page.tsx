@@ -62,6 +62,24 @@ npm run dev`}
         </article>
       </section>
 
+      <section className="mt-8 rounded-xl border border-border/80 bg-card/70 p-5">
+        <h2 className="font-heading text-lg font-semibold text-ink">Metterla su Internet</h2>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Il modo più semplice è pubblicarla gratis su{" "}
+          <a
+            href="https://vercel.com"
+            target="_blank"
+            rel="noreferrer"
+            className="underline underline-offset-2 hover:text-foreground"
+          >
+            Vercel
+          </a>
+          : carichi il progetto (o il repo GitHub) e ottieni un link{" "}
+          <code>https://….vercel.app</code> apribile da qualsiasi dispositivo. Istruzioni
+          dettagliate nel file <code>DEPLOY-VERCEL.txt</code> incluso nello zip.
+        </p>
+      </section>
+
       <p className="mt-8 text-sm text-muted-foreground">
         Torna alla{" "}
         <Link href="/" className="underline underline-offset-2 hover:text-foreground">

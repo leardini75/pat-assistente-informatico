@@ -4,7 +4,7 @@ Web app per studiare e esercitarsi al **concorso pubblico per esami** della Prov
 
 ## Cosa include
 
-- **Schede di studio** sul programma ufficiale 2026 (CAD, documento digitale, riuso AgID, eIDAS 2.0, cloud, interoperabilità, SQL, reti/OSI, virtualizzazione) e sulle materie orali (Statuto PAT, PIAO/anticorruzione, codice di comportamento)
+- **Schede di studio ampliate**: ogni argomento del bando ha punti con spiegazione, glossario, tip d’esame e **PDF scaricabile**; c’è anche il PDF delle dispense complete
 - **Banca quiz** a risposta multipla con spiegazioni
 - **Allenamento risposte sintetiche** (limite 1800 battute, schemi modello, autovalutazione)
 - **Simulazione prova scritta**: 18 quiz + 4 sintetiche, timer 120 minuti, soglia 18/30
@@ -40,12 +40,17 @@ Genera `public/pat-assistente-informatico.zip` (senza `node_modules` e `.next`).
 | `npm run build` | Build di produzione |
 | `npm run start` | Avvio della build |
 | `npm run lint` | ESLint |
+| `npm run studio:pdfs` | Rigenera i PDF in `public/studio-pdfs/` |
 | `npm run zip` | Rigenera lo zip scaricabile |
 
 ## Fonti
 
 - [Bando ufficiale 2026](https://www.provincia.tn.it/Amministrazione/Lavora-con-noi/Concorso-Assistente-informatico-statistico-ind.-informatico)
 - Prove pubbliche del [concorso Funzionario informatico/statistico 2025](https://www.provincia.tn.it/Amministrazione/Lavora-con-noi/Concorso-pubblico-per-6-Funzionari-indirizzo-informatico-statistico) (profilo affine, livello superiore)
+
+## Metterla online
+
+Guida passo-passo in `DEPLOY-VERCEL.txt`. In sintesi: carica il progetto su GitHub e importalo su [Vercel](https://vercel.com) → ottieni un link `https://….vercel.app` usabile da qualsiasi dispositivo.
 
 ## Nota
 

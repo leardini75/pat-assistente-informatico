@@ -1,0 +1,49 @@
+Come mettere PAT Info online (Internet)
+=======================================
+
+Opzione consigliata: Vercel (gratuita per progetti personali)
+-----------------------------------------------------------
+
+1) Crea un account su https://vercel.com (puoi usare Google/GitHub).
+
+2) Metti il progetto su GitHub (o GitLab/Bitbucket):
+   - crea un repository nuovo
+   - carica i file della cartella (quelli dello zip, SENZA node_modules)
+   OPPURE collega il repo già esistente se lo hai creato da Cursor.
+
+3) Su Vercel:
+   - New Project → Importa il repository
+   - Framework: Next.js (di solito lo riconosce da solo)
+   - Build Command: npm run build
+   - Output: lasciato al default Next.js
+   - Deploy
+
+4) Dopo 1–2 minuti ottieni un indirizzo tipo:
+   https://qualcosa.vercel.app
+   Quel link funziona da qualsiasi browser / telefono.
+
+Aggiornamenti
+-------------
+Ogni volta che fai push sul branch collegato, Vercel ridistribuisce
+automaticamente una nuova versione.
+
+Dominio personalizzato (opzionale)
+----------------------------------
+In Vercel → Project → Settings → Domains puoi collegare un tuo dominio
+(es. studio-concorso.tuodominio.it).
+
+
+Altre opzioni (se non vuoi Vercel)
+---------------------------------
+- Netlify: simile, supporta Next.js
+- Cloudflare Pages: ok per molti siti; con Next.js a volte serve config extra
+- Un VPS (DigitalOcean, Contabo…): più controllo, ma da gestire a mano
+  (Node, reverse proxy, HTTPS)
+
+
+Nota importante
+---------------
+Questa app NON ha login né database: i progressi restano salvati
+nel browser di chi la usa (localStorage). Va benissimo per studio
+personale o per condividere il link con altre persone.
+Non mettere password o dati sensibili nel codice.
