@@ -1,0 +1,41 @@
+PAT Info · Assistente informatico
+=================================
+
+Web app per studiare il concorso della Provincia autonoma di Trento
+(Assistente informatico/statistico – indirizzo informatico).
+
+REQUISITI
+---------
+- Node.js versione 20 o 22 (LTS consigliata): https://nodejs.org
+- Su Windows: preferisci una cartella SENZA spazi nel percorso
+  (es. C:\pat-info), così npm e Next.js danno meno problemi.
+
+AVVIO SU WINDOWS
+----------------
+1. Estrai lo zip (tasto destro → Estrai tutto).
+2. Entra nella cartella pat-assistente-informatico.
+3. Doppio clic su avvia.bat
+   - la prima volta scarica le dipendenze (può richiedere alcuni minuti)
+   - poi apre il server su http://127.0.0.1:43127
+4. Apri quel indirizzo nel browser (Chrome, Edge, Firefox…).
+
+AVVIO DA TERMINALE (Windows / Mac / Linux)
+------------------------------------------
+  npm install
+  npm run dev
+
+Poi apri: http://127.0.0.1:43127
+
+COMANDI UTILI
+-------------
+  npm run dev     server di sviluppo (porta 43127)
+  npm run build   build di produzione
+  npm run start   avvio della build
+  npm run zip     rigenera lo zip in public/
+
+NOTE
+----
+- I progressi (quiz fatti, simulazioni) restano nel browser locale.
+- Materiale di studio NON ufficiale: verifica sempre il bando sul sito
+  della Provincia autonoma di Trento.
+- Non usare "npm audit fix --force": può rompere le dipendenze.
